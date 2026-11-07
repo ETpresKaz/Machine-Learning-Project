@@ -1,0 +1,9 @@
+# Core model
+numpy>=1.24
+
+# Training (dataset download + loss curve)
+tensorflow>=2.13
+matplotlib>=3.7
+
+# Drawing GUI (Tkinter ships with most Python installs)
+pillow>=10.0

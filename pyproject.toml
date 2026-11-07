@@ -1,0 +1,28 @@
+[project]
+name = "mnist-from-scratch"
+version = "1.0.0"
+description = "A feedforward neural network written from scratch in NumPy, trained on MNIST, with a Tkinter drawing GUI."
+readme = "README.md"
+license = { file = "LICENSE" }
+authors = [{ name = "Ethan Kazenske" }]
+requires-python = ">=3.10"
+dependencies = ["numpy>=1.24"]
+
+[project.optional-dependencies]
+train = ["tensorflow>=2.13", "matplotlib>=3.7"]
+gui = ["pillow>=10.0"]
+all = ["mnist-from-scratch[train,gui]"]
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+py-modules = [
+  "activation_layer",
+  "activations",
+  "config",
+  "linear_layer",
+  "losses",
+  "model",
+]
